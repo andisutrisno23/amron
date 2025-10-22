@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Portal AMRON</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h2>Login ke Portal</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+    <p>Belum punya akun? <a href="#" onclick="register()">Daftar di sini</a></p>
+    <p id="login-status" class="error"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

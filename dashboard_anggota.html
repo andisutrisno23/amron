@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Anggota - AMRON</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dashboard Anggota</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <section>
+      <h2>Edit Profil Saya</h2>
+      <input id="editName" placeholder="Nama">
+      <textarea id="editVisi" placeholder="Visi & Misi"></textarea>
+      <input type="file" id="editFoto" accept="image/*">
+      <button onclick="saveProfile()">Simpan Profil</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

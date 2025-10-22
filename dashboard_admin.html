@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin - AMRON</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dashboard Admin</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <section>
+      <h2>Tambah Anggota</h2>
+      <input id="newName" placeholder="Nama Anggota">
+      <input id="newVisi" placeholder="Visi & Misi">
+      <button onclick="addMember()">Tambah</button>
+    </section>
+
+    <section>
+      <h2>Upload Galeri</h2>
+      <input type="file" id="galleryUpload" multiple accept="image/*">
+      <button onclick="uploadGallery()">Upload</button>
+    </section>
+
+    <section>
+      <h2>Daftar Anggota</h2>
+      <div id="memberList"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
